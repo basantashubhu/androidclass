@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".RegistrationActivity">
+
+    <LinearLayout
+        android:paddingTop="20sp"
+        android:paddingBottom="20sp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TableLayout
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView android:textSize="16sp" android:text="Full Name"/>
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/full_name_et"
+                style="@style/RegistrationInputField"
+                android:autofillHints="@string/full_name_input"
+                android:hint="@string/full_name_input"/>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="15sp">
+            <TextView android:textSize="16sp" android:text="Email"/>
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/email_address_et"
+                style="@style/RegistrationEmailField"
+                android:autofillHints="Enter email address"
+                android:hint="Enter email address"/>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="15sp">
+            <RadioGroup android:layout_weight="1" android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/student_radio"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:layout_height="wrap_content"
+                    android:text="Student"/>
+                <RadioButton
+                    android:id="@+id/staff_radio"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Staff"/>
+            </RadioGroup>
+        </TableRow>
+
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:layout_height="wrap_content">
+        <TableRow android:orientation="vertical" android:layout_marginTop="15sp">
+            <TextView android:textSize="16sp" android:id="@+id/student_staff_tv" android:text="Batch"/>
+        </TableRow>
+        <TableRow>
+            <Spinner android:visibility="gone" android:id="@+id/department_spinner" android:layout_weight="1" />
+        </TableRow>
+        <TableRow>
+            <Spinner android:id="@+id/batch_spinner" android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="15sp">
+            <TextView android:textSize="16sp" android:text="Password"/>
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/password_et"
+                style="@style/RegistrationPasswordField"
+                android:autofillHints="Enter email address"
+                android:hint="Enter password"/>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="15sp">
+            <TextView android:textSize="16sp" android:text="Contirm Password"/>
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/confirm_password_et"
+                style="@style/RegistrationPasswordField"
+                android:autofillHints="Enter email address"
+                android:hint="Enter password"/>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="15sp">
+            <Button android:text="Register" android:layout_weight="1"
+                android:id="@+id/register_btn"
+                android:backgroundTint="#B5B3B3"/>
+        </TableRow>
+        <TableRow android:layout_marginTop="15sp">
+            <TextView android:text="Already have account? Login"/>
+        </TableRow>
+    </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>

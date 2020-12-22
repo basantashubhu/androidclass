@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidClass</string>
+    <string name="list_view_btn">List View</string>
+    <string name="county_list_button">Counties</string>
+    <string name="registration_button">Registration</string>
+    <string name="full_name_input">Enter full name</string>
+</resources>

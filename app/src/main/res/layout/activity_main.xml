@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30sp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/list_view_btn"
+        android:text="@string/list_view_btn"
+        android:backgroundTint="#e5e"
+        android:layout_marginTop="10sp"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/county_list_button"
+        android:text="@string/county_list_button"
+        android:backgroundTint="#e5e"
+        android:layout_marginTop="10sp"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:id="@+id/registration_btn"
+        android:text="@string/registration_button"
+        android:backgroundTint="#e5e"
+        android:layout_marginTop="10sp"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
